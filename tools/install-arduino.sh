@@ -68,6 +68,9 @@ if [ -z $AR_BRANCH ]; then
 	fi
 fi
 
+echo "Current dirs in Arduino"
+ls -la "$AR_COMPS/arduino/libraries"
+
 #
 # remove code and libraries not needed/wanted for Tasmota framework
 #
@@ -83,17 +86,15 @@ rm -rf "$AR_COMPS/arduino/libraries/RainMaker"
 rm -rf "$AR_COMPS/arduino/libraries/Insights"
 rm -rf "$AR_COMPS/arduino/libraries/ESP_I2S"
 rm -rf "$AR_COMPS/arduino/libraries/SPIFFS"
-#rm -rf "$AR_COMPS/arduino/libraries/BLE"
-#rm -rf "$AR_COMPS/arduino/libraries/SimpleBLE"
-#rm -rf "$AR_COMPS/arduino/libraries/BluetoothSerial"
 rm -rf "$AR_COMPS/arduino/libraries/WiFiProv"
-#rm -rf "$AR_COMPS/arduino/libraries/WiFiClientSecure"
-#rm -rf "$AR_COMPS/arduino/libraries/NetworkClientSecure"
 rm -rf "$AR_COMPS/arduino/libraries/ESP32"
 rm -rf "$AR_COMPS/arduino/libraries/ESP_SR"
 rm -rf "$AR_COMPS/arduino/libraries/ESP_NOW"
 rm -rf "$AR_COMPS/arduino/libraries/TFLiteMicro"
 rm -rf "$AR_COMPS/arduino/libraries/OpenThread"
 rm -rf "$AR_COMPS/arduino/libraries/Zigbee"
+
+echo "Current dirs in Arduino (after cleanup)"
+ls -la "$AR_COMPS/arduino/libraries"
 
 if [ $? -ne 0 ]; then exit 1; fi
