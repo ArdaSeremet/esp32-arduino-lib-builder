@@ -11,7 +11,7 @@ fi
 
 # Arduino branch to use
 if [ -z $AR_BRANCH ]; then
-    AR_BRANCH="main"
+    AR_BRANCH="master"
 fi
 
 if [ -z $IDF_TARGET ]; then
@@ -30,13 +30,13 @@ if [ -z "$CHIP_VARIANT" ]; then
 fi
 
 # Owner of the target ESP32 Arduino repository
-AR_USER="tasmota"
+AR_USER="espressif"
 
 # IDF commit to use
 #IDF_COMMIT=""
 
 # Arduino commit to use
-AR_COMMIT="11bc7ac"
+# AR_COMMIT="11bc7ac"
 
 # The full name of the repository
 AR_REPO="$AR_USER/arduino-esp32"
