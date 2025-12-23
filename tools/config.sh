@@ -39,7 +39,7 @@ AR_USER="tasmota"
 # AR_COMMIT="11bc7ac"
 
 # The full name of the repository
-AR_REPO="$Rapid-Prototypes-LLC/arduino-esp32-exp"
+AR_REPO="Rapid-Prototypes-LLC/arduino-esp32-exp"
 IDF_REPO="$AR_USER/esp-idf"
 AR_LIBS_REPO="$AR_USER/esp32-arduino-libs"
 
