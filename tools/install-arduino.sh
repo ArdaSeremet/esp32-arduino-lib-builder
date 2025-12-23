@@ -70,6 +70,12 @@ fi
 
 if [ $? -ne 0 ]; then exit 1; fi
 
+# Checkout specific Arduino commit
+echo "Checking out Arduino commit 11bc7ac"
+cd "$AR_COMPS/arduino"
+git checkout 11bc7ac
+cd -
+
 #
 # remove code and libraries not needed/wanted for Tasmota framework
 #
