@@ -30,7 +30,7 @@ if [ -z "$CHIP_VARIANT" ]; then
 fi
 
 # Owner of the target ESP32 Arduino repository
-AR_USER="espressif"
+AR_USER="tasmota"
 
 # IDF commit to use
 #IDF_COMMIT=""
@@ -39,7 +39,7 @@ AR_USER="espressif"
 # AR_COMMIT="11bc7ac"
 
 # The full name of the repository
-AR_REPO="$AR_USER/arduino-esp32"
+AR_REPO="$Rapid-Prototypes-LLC/arduino-esp32-exp"
 IDF_REPO="$AR_USER/esp-idf"
 AR_LIBS_REPO="$AR_USER/esp32-arduino-libs"
 
